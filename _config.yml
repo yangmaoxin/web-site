@@ -1,0 +1,64 @@
+# Site settings
+title: Develop Notes
+header-img: "img/facebook.jpg"
+tagline: "cn"  
+description: "杨茂新|上善若水,人淡如菊"  
+baseurl: ""
+url: "http://ymx"  
+
+# About/contact
+owner: 
+  name: " yangmaoxin"
+  email: ymx0107@gmail.com
+  bio: "前端菜鸟"
+
+# Data
+gavatar: http://dreamofbook.qiniudn.com/Az..png
+favicon: img/favicon.png
+
+douban_username:  ymx017
+twitter_username: ymx0107
+github_username: yangmaoxin
+facebook_username: 
+weibo_username: 349873
+zhihu_username: iymx
+
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+relative_permalinks: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "MX.Yang"
+      header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : iymx
+  disqus :
+      short_name : iymx
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: 
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
