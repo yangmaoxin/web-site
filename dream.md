@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "dream"
+title: "Dream"
 description: "梦想清单：我的101个目标"
-header-img: "img/zhihu.jpg"
+header-img: "img/orange.jpg"
 ---
 
 
