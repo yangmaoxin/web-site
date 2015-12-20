@@ -164,12 +164,11 @@ background-position: 0 0;
 代码：
 
 ```
-
 <button type="button" class="btn-default">Click Me</button>
 
 <style type="text/css" media="screen">
-  .btn-default {
-  background: url(image/btn.png) no-repeat 0 0;
+.btn-default {
+ background: url(image/btn.png) no-repeat 0 0;
 }
 .btn-default-alt {
 background: url(image/sprite.png) no-repeat 0 -50px;
