@@ -25,21 +25,46 @@ description:
 
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-``` 
+<script>
+	$(document).ready(function(){
+		
+		$("#Acontent2 .list li .checkbox").click(function(){
+					count();
+					countdel();
+				});	
+		//组合价格
+		function count()
+		{
+			var sum_price=0;
+			var num = 0;
+			$("#Acontent2 .list li").find("input:checked").each(function(){
+				var price = $(this).parent().parent().find(".price-shop").html();
+				price = price.replace(/,/g, "")
+				price = Number(price);
+				sum_price = sum_price + price;
+				num ++;
+			});
+			$(".price-zhuhe").html(sum_price.toFixed(2));	
+			$(".price-zhuhe-xuan").html(num);//选中多少组合产品
+		}
+		
+		
+		//组合原价
+		function countdel()
+		{
+			var sum_price=0;
+			$("#Acontent2 .list li").find("input:checked").each(function(){
+				var price = $(this).parent().parent().find(".price-shop-del").html();
+				price = price.replace(/,/g, "")
+				price = Number(price);
+				sum_price = sum_price + price;
+			});
+			$(".price-zhuhe-del").html(sum_price.toFixed(2));	
+		}
 
-
-// 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
-
-
-```html
-   <img src="../images/avatar.jpg" alt="desc">
-   <style type="text/css" media="screen">
-   background-image: url(../../img/sprite.png);
-   background-position: 0 0;
-   </style>
+	});
+</script>
+```
 ```
 
 
