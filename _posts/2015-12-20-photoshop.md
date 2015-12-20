@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 前端微专业笔记-Photoshop切图
+title: Photoshop切图
 date: 2015-12-20
 categories: blog
 tags: [前端微专业笔记]
@@ -24,14 +24,14 @@ description:
  - CSS:background
 
 
-```
-// 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
+> 
+> // 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
 <img src="../images/avatar.jpg" alt="desc">
 <style type="text/css" media="screen">
 background-image: url(../../img/sprite.png);
 background-position: 0 0;
 </style>
-```
+> 
 
 
 #### 如何切图？—使用PS工具（Photoshop）
@@ -163,10 +163,9 @@ background-position: 0 0;
 
 代码：
 
-```
-<button type="button" class="btn-default">Click Me</button>
-
-<style type="text/css" media="screen">
+> 
+> <button type="button" class="btn-default">Click Me</button>
+> <style type="text/css" media="screen">
 .btn-default {
  background: url(image/btn.png) no-repeat 0 0;
 }
@@ -174,7 +173,7 @@ background-position: 0 0;
 background: url(image/sprite.png) no-repeat 0 -50px;
 }
 </style>
-```
+> 
 
 ####图片合并方案
 
