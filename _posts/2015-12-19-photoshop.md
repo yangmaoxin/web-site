@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photoshop切图
-date: 2015-12-20
+date: 2015-12-19
 categories: blog
 tags: [前端微专业笔记]
 description: 
