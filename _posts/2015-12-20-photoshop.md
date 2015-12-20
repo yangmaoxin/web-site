@@ -9,7 +9,9 @@ description:
 
 ## 《网页制作》之Photoshop切图
 ----------
+
 ### 工具、面板、视图
+
 #### 什么是切图
 
  1. 从设计稿（.psd文件）里切出网页素材（.png/.jpg文件）
@@ -21,6 +23,7 @@ description:
  - HTML:img 
  - CSS:background
 
+
 ```
 // 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
 <img src="../images/avatar.jpg" alt="desc">
@@ -29,8 +32,12 @@ background-image: url(../../img/sprite.png);
 background-position: 0 0;
 </style>
 ```
+
+
 #### 如何切图？—使用PS工具（Photoshop）
+
 **PS首选项设置：**
+
 编辑>首选项>单位与标尺： 将单位（标尺/文字）改成像素。
 
 **面板：**
@@ -133,20 +140,31 @@ background-position: 0 0;
 **保存类型：**
 
 > A:当图片色彩丰富且无透明要求时，建议保存为JPG格式并选择合适的品质(60-80)。
+
 > B:当图片色彩不太丰富时，无论有无透明要求，保存为PNG8格式。（需设置杂边：无；仿色：无仿色。）
-> C:当图片有半透明要求时，保存为PNG24格式。 D:为保证图片质量，需保留一份PSD, 在PSD上进行修改。
+
+> C:当图片有半透明要求时，保存为PNG24格式。
+
+> D:为保证图片质量，需保留一份PSD, 在PSD上进行修改。
 
 **修改、维护**
 
 > A:更改画布大小： 图像>画布大小>更改尺寸，同时将“定位”选在左上角。
+
 > B:移动图标： 若图标为独立图层，则用移动工具拖动即可；若图标为非独立图层，先选用矩形选框工具选中图层，在用移动工具拖动即可。
+
 > C:减小画布到指定区域：用矩形选框工具选定选区–裁剪（或直接用裁剪工具裁剪）
+
 > D:修改PNG8图像时，需要更改颜色模式为：RGB格式。（PNG8默认颜色为索引颜色，直接修改会使颜色失真。）
 
 ###图片优化与合并
+
 ####使用背景图
+
 代码：
+
 ```
+
 <button type="button" class="btn-default">Click Me</button>
 
 <style type="text/css" media="screen">
@@ -158,6 +176,7 @@ background: url(image/sprite.png) no-repeat 0 -50px;
 }
 </style>
 ```
+
 ####图片合并方案
 
 **Sprite拼图**：把设计稿里的小图标，拼合在一张图片上。
