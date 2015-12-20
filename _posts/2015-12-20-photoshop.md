@@ -24,53 +24,6 @@ description:
  - CSS:background
 
 
-```
-<script>
-	$(document).ready(function(){
-		
-		$("#Acontent2 .list li .checkbox").click(function(){
-					count();
-					countdel();
-				});	
-		//组合价格
-		function count()
-		{
-			var sum_price=0;
-			var num = 0;
-			$("#Acontent2 .list li").find("input:checked").each(function(){
-				var price = $(this).parent().parent().find(".price-shop").html();
-				price = price.replace(/,/g, "")
-				price = Number(price);
-				sum_price = sum_price + price;
-				num ++;
-			});
-			$(".price-zhuhe").html(sum_price.toFixed(2));	
-			$(".price-zhuhe-xuan").html(num);//选中多少组合产品
-		}
-		
-		
-		//组合原价
-		function countdel()
-		{
-			var sum_price=0;
-			$("#Acontent2 .list li").find("input:checked").each(function(){
-				var price = $(this).parent().parent().find(".price-shop-del").html();
-				price = price.replace(/,/g, "")
-				price = Number(price);
-				sum_price = sum_price + price;
-			});
-			$(".price-zhuhe-del").html(sum_price.toFixed(2));	
-		}
-
-	});
-</script>
-```
-```
-
-
-
-
-
 #### 如何切图？—使用PS工具（Photoshop）
 
 **PS首选项设置：**
@@ -197,20 +150,6 @@ description:
 ###图片优化与合并
 
 ####使用背景图
-
-代码：
-
-> 
-> <button type="button" class="btn-default">Click Me</button>
-> <style type="text/css" media="screen">
-.btn-default {
- background: url(image/btn.png) no-repeat 0 0;
-}
-.btn-default-alt {
-background: url(image/sprite.png) no-repeat 0 -50px;
-}
-</style>
-> 
 
 ####图片合并方案
 
