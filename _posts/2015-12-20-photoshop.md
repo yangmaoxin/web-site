@@ -31,15 +31,14 @@ function test() {
 ``` 
 
 
-
+// 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
 
 ```
-   // 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
-   <img src="../images/avatar.jpg" alt="desc">
-   <style type="text/css" media="screen">
-   background-image: url(../../img/sprite.png);
-   background-position: 0 0;
-   </style>
+  <img src="../images/avatar.jpg" alt="desc">
+  <style type="text/css" media="screen">
+  background-image: url(../../img/sprite.png);
+  background-position: 0 0;
+  </style>
 ```
 
 
