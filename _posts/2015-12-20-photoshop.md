@@ -24,14 +24,26 @@ description:
  - CSS:background
 
 
-> 
-> // 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
-<img src="../images/avatar.jpg" alt="desc">
-<style type="text/css" media="screen">
-background-image: url(../../img/sprite.png);
-background-position: 0 0;
-</style>
-> 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+``` 
+
+
+
+
+```
+   // 设计稿 (*.psd) -> 产出物 (*png, *.jpg)
+   <img src="../images/avatar.jpg" alt="desc">
+   <style type="text/css" media="screen">
+   background-image: url(../../img/sprite.png);
+   background-position: 0 0;
+   </style>
+```
+
+
+
 
 
 #### 如何切图？—使用PS工具（Photoshop）
